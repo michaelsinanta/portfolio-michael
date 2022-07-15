@@ -30,7 +30,7 @@ export default function Projects() {
             </div>
           </div>
               <img
-            className="flex absolute lg:mx-[510px] lg:-my-56 lg:h-64 max-w-xs object-cover object-top transform hover:scale-105 border flex my-2 items-center p-1 select-none cursor-pointer rounded-md transition-all duration-100"
+            className="flex absolute lg:mx-[510px] lg:-my-56 lg:h-64 w-[300px] object-cover object-top transform hover:scale-105 border flex my-2 items-center p-1 select-none cursor-pointer rounded-md transition-all duration-100"
             src="/projects/okkui.png">
           </img>
         </div>
