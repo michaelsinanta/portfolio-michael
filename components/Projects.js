@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <section className="relative max-w-3xl mx-auto px-4 sm:px-14 lg:px-1 mb-20">
+    <section className="relative max-w-3xl mx-auto lg:px-4 px-14 sm:px-14 lg:px-1 lg:mb-20 mb-[400px]">
         <p className="text-center py-3 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Projects
         </p>
@@ -30,7 +30,7 @@ export default function Projects() {
             </div>
           </div>
               <img
-            className="absolute z-0 lg:mx-[510px] mx-72 lg:-my-56 -my-60 h-64 max-w-xs w-xl object-cover object-top transform hover:scale-105 border flex my-2 items-center p-1 select-none cursor-pointer rounded-md transition-all duration-100"
+            className="flex absolute lg:mx-[510px] lg:-my-56 lg:h-64 max-w-xs object-cover object-top transform hover:scale-105 border flex my-2 items-center p-1 select-none cursor-pointer rounded-md transition-all duration-100"
             src="/projects/okkui.png">
           </img>
         </div>
