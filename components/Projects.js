@@ -1,12 +1,12 @@
 export default function Projects() {
   return (
-    <section className="relative max-w-3xl mx-auto lg:px-4 px-14 sm:px-14 lg:px-1 lg:mb-20 mb-[400px]">
+    <section className="relative max-w-3xl mx-auto lg:px-4 px-14 sm:px-14 lg:px-1 lg:mb-20 mb-[320px]">
         <p className="text-center py-3 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             Projects
         </p>
         <div className="relative mt-10">
           <div className=" p-3 mt-10 lg:max-w-xl max-w-xs w-xs grid grid-cols-1 cursor-default select-none rounded bg-[#F2F4F6] shadow-md">
-            <div className="font-semibold text-xl mb-2 ml-2 text-gray-900 dark:text-white">OKK UI 2022</div>
+            <div className="font-semibold text-xl mb-2 ml-2 text-gray-900">OKK UI 2022</div>
             <div className="flex">
               <button className="transform mouse-pointer bg-indigo-600 text-sm text-white mx-2 py-1 px-2 font-semibold rounded hover:bg-gray-700 dark:hover:bg-gray-600 hover:scale-90 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none">
                 <a href="https://okk.ui.ac.id/" target="_blank">Live</a>
