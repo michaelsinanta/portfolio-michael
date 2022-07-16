@@ -33,32 +33,34 @@ const features = [
 
 export default function Experiences() {
   return (
-    <div className="mb-4 py-12 bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center py-3 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Experiences
-          </p>
-        <div className='rounded-xl'>
-          {features.map((feature) => (
-            <div key={feature.name} className="relative mt-4 bg-underlineOrange overflow-hidden border items-center py-2 px-2 select-none cursor-pointer rounded-md">
-              <input type="checkbox" className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
-              <div className="h-12 w-full pl-5 flex items-center max-h-full">
-                <h1 className='xl:text-md font-bold md:text-lg'>
-                  {feature.name}
-                </h1>
+    <>
+      <div id="experiences" className="mb-4 py-12 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-center py-3 mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              Experiences
+            </p>
+          <div className='rounded-xl'>
+            {features.map((feature) => (
+              <div key={feature.name} className="relative mt-4 bg-underlineOrange overflow-hidden border items-center py-2 px-2 select-none cursor-pointer rounded-md">
+                <input type="checkbox" className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
+                <div className="h-12 w-full pl-5 flex items-center max-h-full">
+                  <h1 className='xl:text-md font-bold md:text-lg'>
+                    {feature.name}
+                  </h1>
+                </div>
+                <div className="absolute top-5 right-3 transition-transform duration-200 rotate-0 peer-checked:-rotate-90">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </div>
+                <div className="overflow-hidden rounded-lg bg-[#F2F4F6] transition-all duration-500 max-h-0 peer-checked:max-h-full">
+                  <div className="p-5 border-t whitespace-pre-wrap">{feature.description}</div>
+                </div>
               </div>
-              <div className="absolute top-5 right-3 transition-transform duration-200 rotate-0 peer-checked:-rotate-90">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-              </div>
-              <div className="overflow-hidden rounded-lg bg-[#F2F4F6] transition-all duration-500 max-h-0 peer-checked:max-h-full">
-                <div className="p-5 border-t whitespace-pre-wrap">{feature.description}</div>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

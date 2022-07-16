@@ -5,15 +5,15 @@ import { Popover, Transition } from "@headlessui/react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "Experiences", href: "#experiences" },
-  { name: "Skills", href: "#skills" },
-  { name: "Project", href: "#projects" },
+  { name: "Home", href: "/#home" },
+  { name: "Experiences", href: "/#experiences" },
+  { name: "Skills", href: "/#skills" },
+  { name: "Project", href: "/#projects" },
 ];
 
 export default function Hero() {
   return (
-    <div className="relative bg-white overflow-hidden">
+    <div id="home" className="relative bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
@@ -119,8 +119,8 @@ export default function Hero() {
                 </span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Hello! My name is Michael, and I’m a computer science student at the University of Indonesia. 
-                I have a passion for Data Science, Artificial Intelligence, Software Engineering, and Web Development. 
+                Hello! &#128075; My name is Michael, and I’m a computer science student at the University of Indonesia. 
+                I have a passion for Data Science, Artificial Intelligence, and Software Engineering (Web & Mobile Development). 
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                   <a
