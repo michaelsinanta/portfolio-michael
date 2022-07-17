@@ -43,7 +43,7 @@ export default function Experiences() {
             {features.map((feature) => (
               <div key={feature.name} className="relative mt-4 bg-underlineOrange overflow-hidden border items-center py-2 px-2 select-none cursor-pointer rounded-md">
                 <input type="checkbox" className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
-                <div className="h-12 w-full pl-5 flex items-center max-h-full">
+                <div className="h-12 w-full pl-5 pr-7 flex items-center max-h-full">
                   <h1 className='xl:text-md font-bold md:text-lg'>
                     {feature.name}
                   </h1>

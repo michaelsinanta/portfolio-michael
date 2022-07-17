@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import TechSkills from "../components/TechSkills";
 import Experiences from "../components/Experiences";
@@ -17,6 +18,7 @@ export default function Home() {
         />
         <link rel="icon" href="/logo_michael.png" />
       </Head>
+      <Navbar />
       <Hero />
       <Experiences />
       <TechSkills />
